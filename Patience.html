@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+	div{
+		font-family: monospace;
+		font-size:18px;
+		position:absolute;
+		left:45%;
+		top:30%;
+	}
+	#name
+	{
+		font-family:monospace;
+		position: absolute;
+		right: 10%;
+		bottom:10%;
+	}
+
+</style>
+</head>
+
+<body>
+	<div id=txt></div>
+	<p id=name>Patience (see it?)</p>
+<body>
+</html>
+
+<script>
+var text = "";
+var time = 500;
+for (var i = 0 ; i < 5 ; i++)
+{
+	setInterval(function(){
+		document.getElementById("txt").innerHTML = "Please wait"
+	},time);
+	time = time + 500;
+
+	setInterval(function(){
+		document.getElementById("txt").innerHTML = "Please wait."
+	},time);
+	time = time + 500;
+
+	setInterval(function(){
+		document.getElementById("txt").innerHTML = "Please wait.."
+	},time);
+	time = time + 500;
+
+	setInterval(function(){
+		document.getElementById("txt").innerHTML = "Please wait..."
+	},time);
+	time = time + 500;
+
+
+}
+</script>
+
